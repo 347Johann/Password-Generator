@@ -10,31 +10,45 @@
   <div class="container">
     <h1 class="heading">Password Generator</h1>
     <div class="options">
+      <!-- Uppercase Option -->
       <div class="separator">
         <h2 class="option-description">Uppercase:</h2>
         <input type="checkbox" class="option-checkbox" id="Uppercase">
       </div>
+
+      <!-- Lowercase Option -->
       <div class="separator">
         <h2 class="option-description">Lowercase:</h2>
         <input type="checkbox" class="option-checkbox" id="Lowercase">
       </div>
+
+      <!-- Numbers Option -->
       <div class="separator">
         <h2 class="option-description">Numbers:</h2>
         <input type="checkbox" class="option-checkbox" id="Numbers">
       </div>
+
+      <!-- Symbols Option -->
       <div class="separator">
         <h2 class="option-description">Symbols:</h2>
         <input type="checkbox" class="option-checkbox" id="Symbols">
       </div>
+
+      <!-- Password Length Input -->
       <div class="password-input-separator">
         <h2 class="textbox-description">Password Length:</h2>
         <input type="number" class="option-textbox" id="Password-Length">
       </div>
     </div>
+
+    <!-- Generate Button -->
     <button onclick="GeneratePassword()" id="Generate-Button">Generate Password</button>
+
+    <!-- Password Output Section -->
     <div class="Password-Output-Separator">
-      <input type="text" name="" id="Password-Output" readonly>
+      <input type="text" id="Password-Output" readonly>
       <button onclick="copy()" class="Copy-Button">COPY</button>
+      <h1 id="Copy-Alert">Copied!!</h1>
     </div>
   </div>
   <script src="script.js"></script>
