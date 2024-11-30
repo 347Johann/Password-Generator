@@ -88,7 +88,7 @@ input{
   background-color: #007add;
 }
 
-#Generate-Button:active{
+button:active{
   transform: scale(0.98);
 }
 
@@ -117,4 +117,17 @@ input{
 
 button:hover {
   background-color: #0056b3;
+}
+
+#Copy-Alert{
+  position: absolute;
+  margin-left: 450px;
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border: 0.5px solid black;
+  border-radius: 100px;
+  display: none;
+  font-weight: 100;
 }
