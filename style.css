@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  box-shadow: 2px 3px 9px black;
+  width: 620px;
+  height: 414px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 27px;
+  float: left;
+}
+
+.option-checkbox{
+  transform: scale(1.5);
+  float: right;
+}
+
+input{
+  transform: scale(1.2);
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: auto;
+  width: 320px;
+}
+
+.separator{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.password-input-separator, .Password-Output-Separator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.textbox-description{
+  font-size: 23px;
+}
+
+.option-textbox{
+  width: 50px;
+}
+
+#Generate-Button{
+  margin-top: 10px;
+  height: 40px;
+  width: 175px;
+  font-size: 15px;
+  color: white;
+  background-color: #3fa6f0;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#Generate-Button:hover{
+  background-color: #007add;
+}
+
+#Generate-Button:active{
+  transform: scale(0.98);
+}
+
+.Password-Output-Separator{
+  gap: 30px;
+  margin-top: 30px;
+}
+
+#Password-Output{
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  text-align: center;
+  font-size: 18px;
+}
+
+.Copy-Button{
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
