@@ -5,6 +5,7 @@ numberCheckbox = document.getElementById("Numbers")
 symbolCheckbox = document.getElementById("Symbols")
 passwordLength = document.getElementById("Password-Length")
 passwordOutput = document.getElementById("Password-Output")
+copyAlert = document.getElementById("Copy-Alert")
 
 // Variables
 const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -39,4 +40,13 @@ function GeneratePassword(){
   }
 
   passwordOutput.value = password
+}
+
+function copy() {
+  let newPasswordOutput = document.getElementById("Password-Output");
+  navigator.clipboard.writeText(newPasswordOutput.value);
+  copyAlert.style.display = "block";
+  setTimeout(() => {
+    copyAlert.style.display = "none";
+  }, 1500)
 }
